@@ -90,8 +90,12 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="newButton" linkSize="1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="deleteButton" linkSize="1" min="-2" max="-2" attributes="0"/>
@@ -101,30 +105,25 @@
                       <Component id="saveButton" linkSize="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="idpedidoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="dataLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="quantidadeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="valorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fornecedorIdfornecedorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="produtoAlimenticioidprodutoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="idpedidoField" alignment="0" pref="361" max="32767" attributes="0"/>
-                                  <Component id="dataField" alignment="0" pref="361" max="32767" attributes="0"/>
-                                  <Component id="quantidadeField" alignment="0" pref="361" max="32767" attributes="0"/>
-                                  <Component id="valorField" alignment="0" pref="361" max="32767" attributes="0"/>
-                                  <Component id="jComboBox1" max="32767" attributes="0"/>
-                                  <Component id="jComboBox2" alignment="1" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
+                          <Component id="idpedidoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="dataLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="quantidadeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="valorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="fornecedorIdfornecedorLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="produtoAlimenticioidprodutoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="idpedidoField" alignment="0" pref="361" max="32767" attributes="0"/>
+                          <Component id="quantidadeField" alignment="0" pref="361" max="32767" attributes="0"/>
+                          <Component id="valorField" alignment="0" pref="361" max="32767" attributes="0"/>
+                          <Component id="jComboBox1" max="32767" attributes="0"/>
+                          <Component id="jComboBox2" alignment="1" max="32767" attributes="0"/>
+                          <Component id="dataField" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
+                  <Component id="masterScrollPane" pref="380" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -171,6 +170,7 @@
                   <Component id="refreshButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="deleteButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="newButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -301,6 +301,7 @@
     <Component class="javax.swing.JTextField" name="dataField">
       <BindingProperties>
         <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.data}" target="dataField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
           <Property name="incompletePathValue" type="java.lang.String" value="null"/>
         </BindingProperty>
         <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="dataField" targetPath="enabled" updateStrategy="1" immediately="false"/>
@@ -395,6 +396,14 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Relat&#xf3;rio"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
