@@ -5,13 +5,13 @@
     <class>view.Fornecedor</class>
     <class>view.Produtoalimenticio</class>
     <class>view.Pedido</class>
+    <class>view.Usuario</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_relatorio_pedido?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
       <property name="javax.persistence.jdbc.password" value="vertrigo"/>
       <property name="hibernate.hbm2ddl.auto" value="update"/>
-      
     </properties>
   </persistence-unit>
 </persistence>
