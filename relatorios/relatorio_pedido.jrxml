@@ -18,7 +18,7 @@
      fornecedor.`nome` AS `fornecedor.nome`,
      pedido.`quantidade` AS quantidade,
      pedido.`valor` AS valor,
-     produtoalimenticio.`nome` AS `produtoalimenticio.nome`,
+     produtoalimenticio.`nome` AS `produtoAlimenticio.nome`,
      pedido.`data` AS data,
      pedido.`idpedido` AS idpedido
 FROM
@@ -32,7 +32,7 @@ FROM
 	<field name="valor" class="java.lang.Double">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
-	<field name="produtoalimenticio.nome" class="java.lang.String"/>
+	<field name="produtoAlimenticio.nome" class="java.lang.String"/>
 	<field name="data" class="java.sql.Date">
 		<fieldDescription><![CDATA[]]></fieldDescription>
 	</field>
@@ -53,7 +53,7 @@ FROM
 			</staticText>
 			<image>
 				<reportElement x="27" y="18" width="137" height="106" uuid="b219590a-9a7b-4ec3-ba36-253cbdd89eae"/>
-				<imageExpression><![CDATA["C:\\Users\\bahia\\Pictures\\img\\pedido.png"]]></imageExpression>
+				<imageExpression><![CDATA["pedido.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>
@@ -112,7 +112,7 @@ FROM
 				</textField>
 				<textField isStretchWithOverflow="true">
 					<reportElement style="Detail" x="276" y="0" width="92" height="15" uuid="5f728bd0-adad-47b9-8de7-ff72b87b3f9a"/>
-					<textFieldExpression><![CDATA[$F{produtoalimenticio.nome}]]></textFieldExpression>
+					<textFieldExpression><![CDATA[$F{produtoAlimenticio.nome}]]></textFieldExpression>
 				</textField>
 				<textField isStretchWithOverflow="true" pattern="d/M/Y">
 					<reportElement style="Detail" x="368" y="0" width="92" height="15" uuid="b5e04d7c-f4d2-442e-b3b3-748c3ba312c2"/>

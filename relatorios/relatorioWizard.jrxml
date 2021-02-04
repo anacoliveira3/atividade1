@@ -42,7 +42,7 @@ FROM
 			</staticText>
 			<image>
 				<reportElement x="33" y="1" width="90" height="69" uuid="5dd3b9e4-e118-479a-adb7-9181cd859700"/>
-				<imageExpression><![CDATA["C:\\Users\\bahia\\Pictures\\img\\fornecedor_grande.png"]]></imageExpression>
+				<imageExpression><![CDATA["fornecedor_grande.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>

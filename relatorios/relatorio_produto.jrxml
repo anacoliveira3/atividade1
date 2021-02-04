@@ -27,7 +27,7 @@ FROM
 		<band height="79" splitType="Stretch">
 			<image>
 				<reportElement x="23" y="0" width="94" height="79" uuid="285d91b5-fc23-409c-a00d-f30d3a6b602a"/>
-				<imageExpression><![CDATA["C:\\Users\\bahia\\Pictures\\img\\alimento_grande.png"]]></imageExpression>
+				<imageExpression><![CDATA["alimento_grande.png"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="158" y="22" width="326" height="39" uuid="83c1323d-5e56-44b4-9067-c2ec3abf8a8e"/>

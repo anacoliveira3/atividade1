@@ -144,6 +144,8 @@ public class JFrmCadPedido extends JPanel {
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement != null}"), jFormattedTextField1, org.jdesktop.beansbinding.BeanProperty.create("enabled"));
         bindingGroup.addBinding(binding);
 
+        jFormattedTextField1.addActionListener(formListener);
+
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, masterTable, org.jdesktop.beansbinding.ELProperty.create("${selectedElement.quantidade}"), quantidadeField, org.jdesktop.beansbinding.BeanProperty.create("text"));
         binding.setSourceUnreadableValue("null");
         bindingGroup.addBinding(binding);
@@ -310,6 +312,9 @@ public class JFrmCadPedido extends JPanel {
             else if (evt.getSource() == jButton1) {
                 JFrmCadPedido.this.jButton1ActionPerformed(evt);
             }
+            else if (evt.getSource() == jFormattedTextField1) {
+                JFrmCadPedido.this.jFormattedTextField1ActionPerformed(evt);
+            }
         }
     }// </editor-fold>//GEN-END:initComponents
 
@@ -373,6 +378,10 @@ public class JFrmCadPedido extends JPanel {
             System.out.println("Erro " + ex.getMessage());
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
