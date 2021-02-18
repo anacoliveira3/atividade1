@@ -3,10 +3,10 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
-            <name>ProjetoAtividade1</name>
+            <name>LP4B_Grupo8</name>
             <source-roots>
-                <root id="src.relatorios.dir"/>
-                <root id="src.dir"/>
+                <root id="src.fonte.dir"/>
+                <root id="src.relatorios.dir" name="relatórios"/>
             </source-roots>
             <test-roots/>
         </data>

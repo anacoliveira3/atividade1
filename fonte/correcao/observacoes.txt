@@ -1,0 +1,6 @@
+Parabéns pelo trabalho
+Nota Bimestral: 10 pontos
+
+obs: No projeto, além da pasta de relatórios, vocês criaram mais uma pasta de código fonte
+que estava sendo mescladas. Em uma pasta (src) havia versões desatualizadas dos formulários de
+cadastros.

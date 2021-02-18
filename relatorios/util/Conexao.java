@@ -25,7 +25,7 @@ public class Conexao {
         if(conexao == null){
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_relatorio_pedido", "root", "vertrigo");
+                conexao = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_relatorio_pedido", "root", "");
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(Conexao.class.getName()).log(Level.SEVERE, null, ex);
             } catch (SQLException ex) {
